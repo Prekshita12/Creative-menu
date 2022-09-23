@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    transition: 0.8s;
+    overflow: hidden;
+}
+.txt{
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: rgb(55, 52, 52);
+}
+/* .txt:hover{
+    color:white; */
+/* } */
+ul:hover li a{
+    color: #0002;
+}
+ul li:hover a{
+    color:black;
+}
+.blue::before{
+    content: "HTML";
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #0470fe;
+    font-size: 200px;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    letter-spacing: 100px;
+    color: #0004;
+    visibility: hidden;
+    transition: 0.2s;
+    
+}
+ul li:hover .blue::before{
+    visibility: visible;
+    letter-spacing: 0px;
+}
+.orange::before{
+    content: "PYTHON";
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #ff7675;
+    font-size: 200px;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    letter-spacing: 100px;
+    color: #0004;
+    visibility: hidden;
+    transition: 0.2s;
+}
+ul li:hover .orange::before{
+    visibility: visible;
+    letter-spacing: 0px;
+}
+.darkblue::before{
+    content: "JAVA";
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color:#1582fe;
+    font-size: 200px;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    letter-spacing: 100px;
+    color: #0004;
+    visibility: hidden;
+    transition: 0.2s;
+}
+ul li:hover .darkblue::before{
+    visibility: visible;
+    letter-spacing: 0px;
+}
+.purple::before{
+    content: "NODE JS";
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color:#fd79a8;
+    font-size: 200px;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    letter-spacing: 100px;
+    color: #0004;
+    visibility: hidden;
+    transition: 0.2s;
+}
+ul li:hover .purple::before{
+    visibility: visible;
+    letter-spacing: 0px;
+}
+.pink::before{
+    content: "CSS";
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(240, 96, 240);
+    font-size: 200px;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    letter-spacing: 100px;
+    color: #0004;
+    visibility: hidden;
+    transition: 0.2s;
+}
+ul li:hover .pink::before{
+    visibility: visible;
+    letter-spacing: 0px;
+}
+.yellow::before{
+    content: "JAVA SCRIPT";
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color:#ffeaa7;
+    font-size: 200px;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    letter-spacing: 100px;
+    color: #0004;
+    visibility: hidden;
+    transition: 0.2s;
+}
+ul li:hover .yellow::before{
+    visibility: visible;
+    letter-spacing: 0px;
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <ul style="list-style: none;">
+        <li ><a class="blue   txt" >HTML</a></li>
+        <li ><a  class="orange  txt">PYTHON</a> </li>
+        <li><a class="darkblue txt" >JAVA</a></li>
+        <li><a class="purple txt" >NODE JS</a></li>
+        <li><a class="pink txt" >CSS</a> </li>
+        <li><a class="yellow txt" >JAVA SCRIPT</a></li>
+    </ul>
+    </div>
+</body>
+</html>
